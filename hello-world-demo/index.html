@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="logo_web.png" alt="Logo" class="logo">
+        <div class="color-bar"></div>
+    </div>
+    <div class ="imageUploaded">
+        <img alt="" class="img"/>
+    </div>
+    <input 
+    type="file"
+    class = "inputFile"
+    id = "fileInp"
+    onchange="getFile(event)"
+    accept="image/png,image/jpeg"/>
+    
+    <label for="fileInp"> ADD A IMAGE </label>
+    <span class="fileText"></span>
+    <button onclick="uploadImage()">POST</button>
+    <div class="bar">
+        <div class = "progress"></div>
+    </div>
+    <div class="uploadPercentage">0%</div>
+    
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
